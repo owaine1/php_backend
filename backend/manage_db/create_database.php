@@ -1,7 +1,7 @@
 <?php
 require_once('../common/connection.php');
 
-sleep('2');
+sleep('1');
 
 $db = new DbConnect($admin, $pass);
 
