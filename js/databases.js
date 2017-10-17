@@ -58,5 +58,7 @@ function create_db(){
 
 function created_db(){
   console.log('Inside created_db');
+  $('#create_db').removeClass('btn-warning').addClass('btn-success');
+
   setup();
 }
