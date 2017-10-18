@@ -5,7 +5,7 @@ $user = new DbConnect($admin, $pass);
 
 $user_name = $_GET['user_name'];
 
-function safety($user_name){
+function safety ($user_name){
   $restricted_names = ['bill', 'bob', 'betty', 'root', 'mysql.sys', 'mysql.session'];
   if (in_array($user_name, $restricted_names)){
     logger('if is true');
@@ -23,5 +23,6 @@ if ($result){
   else {
     logger($user->conn->error);
   }
+}
 }
 safety($user_name);
