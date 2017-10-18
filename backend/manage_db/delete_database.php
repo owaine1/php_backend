@@ -17,16 +17,13 @@ function safety($db_name){
     $sql = "DROP DATABASE $db_name";
     $result = $db->conn->query($sql);
     //  go through command and delete
+    if ($result){
+      logger("deleted database");
+      echo "dropped database $db_name";
+    }
+      else {
+        logger($db->conn->error);
+      }
     }
 }
 safety($db_name);
-
-
-
-if ($result){
-  logger("created database");
-  echo "dropped database $db_name";
-}
-  else {
-    logger($db->conn->error);
-  }
