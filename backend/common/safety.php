@@ -13,5 +13,6 @@ function safety(){
 // sys
 // information_schema
 // maybe needs special password to do it or / and needs to be different user
-// display message "you don't have the rights to do this..."
+// display message "You don't have the rights to do this..."
 // does it involve
+//
