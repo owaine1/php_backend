@@ -5,7 +5,7 @@ $user = new DbConnect($admin, $pass);
 
 $user_name = $_GET['user_name'];
 function safety_db($user_name){
-  $restricted_names = ['bill', 'bob', 'betty', 'root'];
+  $restricted_names = ['bill', 'bob', 'betty', 'root', mysql.sys, mysql.session];
   if (in_array($user_name, $restricted_names)){
     logger('if is true');
     echo "$user_name cannot be deleted!";
