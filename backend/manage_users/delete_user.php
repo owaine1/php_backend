@@ -1,9 +1,9 @@
 <?php
 require_once('../common/connection.php');
 
-$db = new DbConnect($admin, $pass);
+$user = new DbConnect($admin, $pass);
 
-$db_name = $_GET['db_name'];
+$user_name = $_GET['user_name'];
 $sql = "DROP USER $user_name";
 
 $result = $db->conn->query($sql);
