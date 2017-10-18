@@ -3,7 +3,7 @@ require_once('../common/connection.php');
 
 $db = new DbConnect($admin, $pass);
 
-$sql = 'SHOW DATABASES';
+$sql = 'SHOW USERS';
 
 $result = $db->conn->query($sql);
 
