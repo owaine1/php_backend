@@ -9,6 +9,7 @@ function safety($db_name){
   if (in_array($db_name, $restricted_names)){
     logger('if is true');
     echo "$db_name cannot be deleted!";
+    
 
     // send message to say delete stopped.
   } else {
