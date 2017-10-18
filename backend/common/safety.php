@@ -16,3 +16,4 @@ function safety(){
 // display message "You don't have the rights to do this..."
 // does it involve
 //
+// This marries to delete_user.php need to add a bit of code.
