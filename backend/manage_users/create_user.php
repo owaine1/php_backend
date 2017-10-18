@@ -14,6 +14,8 @@ $result = $user->conn->query($sql);
 if ($result){
   logger("created user");
   echo "created user $user_name";
+  echo "created user $user_password";
+
 }
   else {
     logger($user->conn->error);
