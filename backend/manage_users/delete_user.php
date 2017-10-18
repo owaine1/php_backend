@@ -4,7 +4,7 @@ require_once('../common/connection.php');
 $user = new DbConnect($admin, $pass);
 
 $user_name = $_GET['user_name'];
-function safety_db($user_name){
+function safety($user_name){
   $restricted_names = ['bill', 'bob', 'betty', 'root', mysql.sys, mysql.session];
   if (in_array($user_name, $restricted_names)){
     logger('if is true');
@@ -23,4 +23,4 @@ if ($result){
     logger($user->conn->error);
   }
 }
-safety_db($user_name);
+safety($user_name);
