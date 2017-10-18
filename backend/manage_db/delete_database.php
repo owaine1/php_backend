@@ -14,13 +14,13 @@ function safety($db_name){
   } else {
     logger('if is false');
     $sql = "DROP DATABASE $db_name";
+    $result = $db->conn->query($sql);
     //  go through command and delete
     }
 }
 safety($db_name);
 
 
-$result = $db->conn->query($sql);
 
 if ($result){
   logger("created database");
