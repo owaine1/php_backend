@@ -3,7 +3,7 @@ function create_user(){
   var user_name = $('#user_name').val();
   console.log(user_name);
 
-  var pass = ('#user_password').val();
+  var pass = $('#user_password').val();
   console.log(pass);
 
 
