@@ -5,7 +5,7 @@ $db = new DbConnect($admin, $pass);
 
 $db_name = $_GET['db_name'];
 function safety($db_name){
-  if ($db_name === in_array($restricted_names)){
+  if {$db_name === in_array($restricted_names);
     $restricted_names = [bill, bob, mysql, performance_schema, sys, information_schema];
     // send message to say delete stopped.
   } else {
