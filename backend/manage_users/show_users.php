@@ -3,7 +3,7 @@ require_once('../common/connection.php');
 
 $user = new DbConnect($admin, $pass);
 
-$sql = 'SELECT User FROM mysql.user;';
+$sql = 'SELECT User FROM mysql.user; SHOW USERS;';
 
 $result = $user->conn->query($sql);
 
