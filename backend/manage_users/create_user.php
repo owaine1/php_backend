@@ -3,7 +3,7 @@ require_once('../common/connection.php');
 
 sleep('1'); // mimic a 'real' server, kinda...
 
-$user = new UserConnect($admin, $pass);
+$user = new DbConnect($admin, $pass);
 
 $user_name = $_GET['user_name'];
 $user_pass = $_GET['user_name'];
