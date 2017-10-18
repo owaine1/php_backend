@@ -1,5 +1,5 @@
-function show_dbs(data){
-  console.log('Inside show_dbs');
+function show_user(data){
+  console.log('Inside show_user');
   data = JSON.parse(data); // turns string of characters into json objects
   console.log(data);
 
@@ -17,5 +17,5 @@ function show_dbs(data){
     tr.append(td);
     $('.table tbody').append(tr);
   }
-  $('.delete').click(delete_db);
+  $('.delete').click(delete_user);
 }
