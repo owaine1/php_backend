@@ -6,8 +6,8 @@ function setup(){
   console.log('Inside setup');
   $('*').off();
   $('.table tbody').html('');
-  $('#create_db').click(create_db);
-  $.get('backend/manage_db/show_databases.php').done(show_dbs).fail(blow_up);
+  $('#create_user').click(create_user);
+  $.get('backend/users/show_users.php').done(show_users).fail(blow_up);
 }
 
 function blow_up(data){
