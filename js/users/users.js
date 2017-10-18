@@ -7,7 +7,7 @@ function setup(){
   $('*').off();
   $('.table tbody').html('');
   $('#create_user').click(create_user);
-  $.get('backend/users/show_users.php').done(show_user).fail(blow_up);
+  $.get('backend/manage_users/show_users.php').done(show_user).fail(blow_up);
 }
 
 function blow_up(data){
