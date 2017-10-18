@@ -13,6 +13,7 @@ function safety($db_name){
     // send message to say delete stopped.
   } else {
     logger('if is false');
+    global $db;
     $sql = "DROP DATABASE $db_name";
     $result = $db->conn->query($sql);
     //  go through command and delete
