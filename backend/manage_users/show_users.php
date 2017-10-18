@@ -11,7 +11,9 @@ if ($result){
   $output = $result->fetchAll();
   logger($output);
   echo json_encode($output);
+  // do true stuff
 }
   else {
     logger($user->conn->error);
+    // do false stuff
   }
