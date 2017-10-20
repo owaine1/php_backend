@@ -7,7 +7,7 @@ function setup(){
     $('#inside').hide();
     $('#login').click(do_login);
     $('#logout').click(do_logout);
-    check_backend();
+    //check_backend();
 }
 function do_login(){
   console.log('Inside do_login');
@@ -45,8 +45,7 @@ function logged_out(){
 }
 
 
-
-function fail(data){
+function blow_up(data){
     console.log('oops...');
     console.log(data);
 }
