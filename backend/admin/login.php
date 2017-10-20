@@ -10,7 +10,7 @@ $user_name = $_GET['user'];
 $user_pass = md5($_GET['pass']);
 logger($user_name . $user_pass);
 
-$sql = "SELECT * FROM users WHERE user = '$user_name' && pass = '$user_pass'";
+$sql = "SELECT * FROM users WHERE user = '$user_name' && password = '$user_pass'";
 $result = $db->conn->query($sql);
 
 if ($result->rowCount() == 1) {
