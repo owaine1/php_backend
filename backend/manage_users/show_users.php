@@ -9,7 +9,7 @@ $result = $user->conn->query($sql);
 
 if ($result){
   $output = $result->fetchAll();
-  logger($output);
+  
   echo json_encode($output);
   // do true stuff
 }
