@@ -24,8 +24,8 @@ function logged_in(data){
   console.log('Inside logged_in');
   console.log(data);
   if(data == 'logged in'){
-    $('#outside').slipdeUp(800);
-    $('#inside').slipdeDown(800);
+    $('#outside').slideUp(800);
+    $('#inside').slideDown(800);
   }
   else{
     $('message').text('Sorry you must be logged in');
