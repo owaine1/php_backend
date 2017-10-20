@@ -20,6 +20,6 @@ if ($result->rowCount() == 1) {
   echo "logged in";
 }else {
   //logger($db->conn->error);
-  echo 'sorry - you must be logged in';
   header('Location: index.php');
+  echo 'sorry - you must be logged in';
 }
