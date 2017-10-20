@@ -11,8 +11,8 @@ function setup(){
 }
 function do_login(){
   console.log('Inside do_login');
-  var user = $('username').val();
-  var pass = $('password').val();
+  var user = $('#username').val();
+  var pass = $('#password').val();
 
   var signin_creds = {
     user: user,
