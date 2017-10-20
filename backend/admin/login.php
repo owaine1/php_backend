@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require_once('../common/connection.php');
 require_once('../common/logger.php');
 sleep('1'); // mimic a 'real'server, kinda...
