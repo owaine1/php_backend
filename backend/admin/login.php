@@ -13,12 +13,12 @@ logger($user_name . $user_pass);
 
 // $sql = "SELECT * FROM users WHERE user = '$user_name' && password = '$user_pass'";
 // $result = $db->conn->query($sql);
-$STMT = $db->conn->prepare("SELECT * FROM users WHERE user = :user_name && pass = :user_pass");
-$result->bindParam(':user_name', $user_name);
-$result->bindParam(':user_pass', $user_pass);
-$result->execute();
+$stmt = $db->conn->prepare("SELECT * FROM users WHERE user = :user_name && password = :user_pass");
+$stmt->bindParam(':user_name', $user_name);
+$stmt->bindParam(':user_pass', $user_pass);
+$stmt->execute();
 
-if ($result->rowCount() == 1) {
+if ($stmt->rowCount() == 1) {
   logger("user is registered");
   $_SESSION['logged_in'] = true;
   logger($_SESSION);
