@@ -30,10 +30,15 @@
     <input type="text" id="username" placeholder="enter username">
     <input type="text" id="password" placeholder="enter password">
 
-    <input type="submit" id="login_submit" value="login">
+    <button type="submit" id="login_submit">login</button>
     <div id="message"></div>
   </div>
-  <div id="inside"></div>
+  <div id="inside">
+    <p>you are logged in!</p>
+    <button id="logout">logout</button>
+    // now show only logged in stuff!
+    <a href="page2.php">go to page 2</a>
+  </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nam et rem, aspernatur accusantium fugit dolorum itaque adipisci dolore vero, eos facere ullam, expedita totam fuga ad ea aperiam harum.</p>
 
 </body>
