@@ -34,7 +34,7 @@ function logged_in(data){
 }
 function do_logout(){
   console.log('Inside logged_out');
-  $.get('backend/admin.logout.php').done(logged_out).fail(blow_up);
+  $.get('backend/admin/logout.php').done(logged_out).fail(blow_up);
 }
 
 function logged_out(){
