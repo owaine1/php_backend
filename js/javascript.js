@@ -4,7 +4,24 @@ $(document).ready(setup);
 
 function setup(){
     console.log('Inside setup');
+    $('#inside').hide();
+    $('#login').click(do_login);
+    $('#logout').click(do_logout);
     check_backend();
+}
+function do_login(){
+  console.log('Inside do_login');
+  var user = $('username').val();
+  var pass = $('password').val();
+
+  var signin_creds = {
+    user: user,
+    pass: pass
+  };
+
+}
+function do_logout(){
+  console.log('Inside do_logout');
 }
 
 function check_backend(){
