@@ -27,8 +27,8 @@
 
 <div id="login_div">
   <div id="outside">
-    <input type="text" id="username" placeholder="enter username">
-    <input type="password" id="password" placeholder="enter password">
+    <input type="text" id="username" value="bertie" placeholder="enter username">
+    <input type="password" id="password" value="bertie-easy-password" placeholder="enter password">
 
     <button type="submit" id="login">login</button>
     <div id="message"></div>
