@@ -19,7 +19,7 @@ if ($result->rowCount() == 1) {
   logger($_SESSION);
   echo "logged in";
 }else {
-  header('Location: index.php');
-  echo 'sorry - you must be logged in';
   logger($db->conn->error);
+  echo 'sorry - you must be logged in';
+  header('Location: index.php');
 }
